@@ -42,7 +42,7 @@ canvas.pack()
 frame = Frame(root,bg="#ececec")
 frame.place(relheight=1,relwidth=1,relx=0,rely=0)
 
-headingLabel = Label(frame,text="Your Details",bg="#ececec",fg="#000000",font='DecoType 24')
+headingLabel = Label(frame,text="Y O U R . D E T A I L S",bg="#ececec",fg="#000000",font='DecoType 24')
 headingLabel.pack(fill = X, expand =False, ipady = 18)
 
 inputLabel = Label(frame,text="Date Of Birth (DD-MM-YYYY) :",font='AppleGothic 16',fg="#000000",bg="#ececec")
@@ -53,10 +53,10 @@ myInput = Entry(frame,font = 'AppleGothic 16 italic',textvariable = inputfield,b
 myInput.place(relheight = .10,relwidth=.30,relx=.62,rely=.20)
 
 calculateButton = Button(frame,text="Calculate Age",font = 'AppleGothic 16',bg="#ffffff",fg="red",activebackground="#ffffff",command=calculateAge)
-calculateButton.place(relheight=.12,relwidth=.35,relx=.375,rely=.37)
+calculateButton.place(relheight=.12,relwidth=.35,relx=.330,rely=.37)
 
-headingLabel1 = Label(frame,text="Your Age",bg="#ececec",fg="#000000",font='DecoType 24')
-headingLabel1.place(relx=.41,rely=.52)
+headingLabel1 = Label(frame,text="Y O U R . A G E",bg="#ececec",fg="#000000",font='DecoType 24')
+headingLabel1.place(relx=.30,rely=.52)
 
 textAgeLabel=Label(frame,textvariable="fullAge",text="You are",bg="#ececec",fg="#000000",font='AppleGothic 16')
 textAgeLabel.place(relheight=.05,relwidth=.15,relx=.1,rely=.70)
@@ -66,22 +66,22 @@ fullYear=StringVar()
 fullYearOutput = Label(frame,textvariable =fullYear,bg="#ececec",fg="#000000",font='AppleGothic 16 bold')
 fullYearOutput.place(relheight=.05,relwidth=.06,relx=.27,rely=.70)
 fullYearText=Label(frame,text="Years",bg="#ececec",fg="#000000",font='AppleGothic 16')
-fullYearText.place(relheight=.05,relwidth=.1,relx=.35,rely=.70)
+fullYearText.place(relheight=.05,relwidth=.1,relx=.34,rely=.70)
 
 
 fullMonth=StringVar()
 fullMonthOutput = Label(frame,textvariable =fullMonth,bg="#ececec",fg="#000000",font='AppleGothic 16 bold')
 fullMonthOutput.place(relheight=.05,relwidth=.05,relx=.48,rely=.70)
 fullMonthText=Label(frame,text="Months",bg="#ececec",fg="#000000",font='AppleGothic 16')
-fullMonthText.place(relheight=.05,relwidth=.13,relx=.56,rely=.70)
+fullMonthText.place(relheight=.05,relwidth=.13,relx=.55,rely=.70)
 
 
 fullDay=StringVar()
 fullDayOutput = Label(frame,textvariable =fullDay,bg="#ececec",fg="#000000",font='AppleGothic 16 bold')
 fullDayOutput.place(relheight=.05,relwidth=.05,relx=.70,rely=.70)
 fullDayText=Label(frame,text="Days",bg="#ececec",fg="#000000",font='AppleGothic 16')
-fullDayText.place(relheight=.05,relwidth=.15,relx=.76,rely=.70)
-#set default value
+fullDayText.place(relheight=.05,relwidth=.11,relx=.76,rely=.70)
+
 setFullAge(0,0,0)
 
 
